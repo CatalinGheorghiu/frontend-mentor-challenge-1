@@ -1,10 +1,10 @@
 // vue.config.js
 module.exports = {
   css: {
-    // requireModuleExtension: false,
+    requireModuleExtension: false,
     loaderOptions: {
       sass: {
-        prependData: '@import "@/styles/main.scss";'
+        prependData: '@import "@/styles/main.scss";',
       },
     },
   },
