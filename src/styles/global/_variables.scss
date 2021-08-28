@@ -1,0 +1,23 @@
+/*
+ *** Colors ***
+ */
+
+//Primary
+$color-pale-blue: hsl(225, 100%, 94%);
+$color-bright-blue: hsl(245, 75%, 52%);
+
+// Neutral
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$color-desaturated-blue: hsl(224, 23%, 55%);
+$color-dark-blue: hsl(223, 47%, 23%);
+
+
+/*
+*** Breakpoints ***
+*/
+$breakpoint-md: 768px; // tablets
+$breakpoint-max-lg: 959px; // max-tablets
+$breakpoint-lg: 960px; // desktop
+$breakpoint-max-xlg: 1439px; // max-desktop
+$breakpoint-xlg: 1440px; // HD
