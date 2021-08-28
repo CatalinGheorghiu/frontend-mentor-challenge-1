@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  props: {},
+  props: {}
 };
 </script>
 
-<style lang="scss"></style>
+<style lang='scss'></style>
