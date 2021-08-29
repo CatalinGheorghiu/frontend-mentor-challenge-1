@@ -12,7 +12,11 @@ body {
   height: 100vh;
   font-family: 'Red Hat Display', sans-serif;
   background-color: $color-pale-blue;
-  background-image: url(".");
+  background-image: url("~@/assets/images/pattern-background-mobile.svg");
+
+  @media (min-width: $breakpoint-md) {
+    background: $color-pale-blue url("~@/assets/images/pattern-background-desktop.svg") no-repeat;
+  }
 }
 
 #app {
