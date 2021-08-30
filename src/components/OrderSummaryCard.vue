@@ -4,10 +4,11 @@
       <img alt='' src='../assets/images/illustration-hero.svg'>
     </div>
     <div class='card__body'>
-      <h1 class='title'>Order Summary</h1>
-      <p class='description'>You can now listen to millions of songs, audiobooks, and podcasts on
-        any device anywere you
-        like!
+      <h1 class='title'>
+        {{ bodyTitle }}
+      </h1>
+      <p class='description'>
+        {{ bodyDescription }}
       </p>
       <div class='plan'>
         <div class='plan__icon'>
@@ -15,14 +16,16 @@
         </div>
         <div class='plan__fee'>
           <p class='title'>
-            Annual Plan
+            {{ planFeeTitle }}
           </p>
           <p class='price'>
-            $59.99/year
+            {{ planFeePrice }}
           </p>
         </div>
         <div class='plan__link'>
-          <a href='#'>Change</a>
+          <a href='#'>
+            {{ planLink }}
+          </a>
         </div>
       </div>
     </div>
@@ -38,7 +41,28 @@ import IconMusic from '@/components/icons/IconMusic.vue';
 
 export default {
   components: { IconMusic },
-  props: {}
+  props: {
+    bodyTitle: {
+      type: String,
+      default: ''
+    },
+    bodyDescription: {
+      type: String,
+      default: ''
+    },
+    planFeeTitle: {
+      type: String,
+      default: ''
+    },
+    planFeePrice: {
+      type: String,
+      default: ''
+    },
+    planLink: {
+      type: String,
+      default: ''
+    }
+  }
 };
 </script>
 
