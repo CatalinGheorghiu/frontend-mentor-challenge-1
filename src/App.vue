@@ -1,17 +1,25 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id='app'>
+    <OrderSummaryCard
+      body-description='
+        You can now listen to millions of songs, audiobooks, and podcasts on
+        any device anywere you
+        like!'
+      body-title='Order Summary'
+      plan-fee-price='$59.99/year'
+      plan-fee-title='Annual Plan'
+      plan-link='Change' />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import OrderSummaryCard from './components/OrderSummaryCard.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-  },
+    OrderSummaryCard
+  }
 };
 </script>
 

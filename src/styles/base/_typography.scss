@@ -1,3 +1,13 @@
 p {
   font-size: 16px;
 }
+
+a {
+  font-size: 12px;
+  font-weight: 700;
+
+  &:hover {
+    opacity: .5;
+    text-decoration: none;
+  }
+}
