@@ -1,5 +1,5 @@
 <template>
-  <section class='card'>
+  <div class='card'>
     <header class='card__header'>
       <img alt='' src='../assets/images/illustration-hero.svg'>
     </header>
@@ -36,7 +36,7 @@
       <button class='btn btn--primary'>Proceed to Payment</button>
       <button class='btn btn--secondary'>Cancel Order</button>
     </footer>
-  </section>
+  </div>
 </template>
 
 <script>

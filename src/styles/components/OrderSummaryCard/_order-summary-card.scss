@@ -5,10 +5,15 @@
   align-content: center;
   align-items: center;
   border-radius: 17px;
-  width: 430px;
-  height: 80vh;
   text-align: center;
   background-color: #fff;
+  width: 350px;
+  height: 600px;
+
+  @media (min-width: 768px) {
+    width: 430px;
+    height: 700px;
+  }
 
   &__header {
     width: 100%;
@@ -23,8 +28,12 @@
   }
 
   &__body {
-    padding: 50px 44px 12px;
+    padding: 28px 44px 12px;
     height: 45%;
+
+    @media (min-width: 768px) {
+      padding: 50px 44px 12px;
+    }
 
     .title {
       font-size: 28px;
@@ -39,9 +48,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 24px;
+      padding: 16px;
       border-radius: 12px;
       background-color: $color-white-lilac;
+
+      @media (min-width: 768px) {
+        padding: 24px;
+      }
 
       .left-container {
         display: flex;
