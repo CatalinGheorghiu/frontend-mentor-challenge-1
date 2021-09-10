@@ -1,9 +1,10 @@
 <template>
-  <div class='card'>
-    <div class='card__header'>
+  <section class='card'>
+    <header class='card__header'>
       <img alt='' src='../assets/images/illustration-hero.svg'>
-    </div>
-    <div class='card__body'>
+    </header>
+
+    <main class='card__body'>
       <h1 class='title'>
         {{ bodyTitle }}
       </h1>
@@ -11,16 +12,18 @@
         {{ bodyDescription }}
       </p>
       <div class='plan'>
-        <div class='plan__icon'>
-          <icon-music />
-        </div>
-        <div class='plan__fee'>
-          <p class='title'>
-            {{ planFeeTitle }}
-          </p>
-          <p class='price'>
-            {{ planFeePrice }}
-          </p>
+        <div class='left-container'>
+          <div class='plan__icon'>
+            <icon-music />
+          </div>
+          <div class='plan__fee'>
+            <p class='title'>
+              {{ planFeeTitle }}
+            </p>
+            <p class='price'>
+              {{ planFeePrice }}
+            </p>
+          </div>
         </div>
         <div class='plan__link'>
           <a href='#'>
@@ -28,12 +31,12 @@
           </a>
         </div>
       </div>
-    </div>
-    <div class='card__footer'>
+    </main>
+    <footer class='card__footer'>
       <button class='btn btn--primary'>Proceed to Payment</button>
       <button class='btn btn--secondary'>Cancel Order</button>
-    </div>
-  </div>
+    </footer>
+  </section>
 </template>
 
 <script>
